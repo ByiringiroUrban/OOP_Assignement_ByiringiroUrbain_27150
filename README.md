@@ -1,8 +1,13 @@
 # OOP Assignment – Byiringiro Urbain (27150)
 
+
+# Names: Byiringiro Urbain Bobola
+# id: 27150
+# Date: 18 November 2025
+
 ## Overview
-- All Java sources now live under the root package `_27150`, named after the student ID as required.
-- Each question `q1` … `q10` is implemented as a dedicated subpackage containing the domain model, the interactive console runner, and a corresponding automated test harness.
+- All Java sources are under the root package `_27150`.
+- Each question `q1` … `q10` is implemented as a dedicated subpackage .
 - Every console output must include the student ID. This is enforced centrally via `_27150.StudentOutput`, which wraps `System.out` so no manual string changes are needed.
 
 ## Package Layout
@@ -14,11 +19,11 @@
 
 ## Prerequisites
 - JDK 17+ available on the PATH.
-- Run commands from the repository root: `C:\Users\urban\OneDrive\Desktop\OOP-ByiringiroUrbain_27150`.
+- Run commands from the repository root:
 
 ## Build
 ```powershell
-cd C:\Users\urban\OneDrive\Desktop\OOP-ByiringiroUrbain_27150
+
 $files = Get-ChildItem -Recurse -Filter *.java
 javac $files.FullName
 ```
@@ -30,18 +35,17 @@ Because the root package is `_27150`, every `java` command must include that nam
 
 ### Interactive runner (example: Question 1 Hospital System)
 ```powershell
-cd C:\Users\urban\OneDrive\Desktop\OOP-ByiringiroUrbain_27150
+
 java _27150.q1.HospitalManagementSystem
 ```
 
 ### Automated test harness (example: Question 1 tests)
 ```powershell
-cd C:\Users\urban\OneDrive\Desktop\OOP-ByiringiroUrbain_27150
+
 java _27150.q1.TestHospitalSystem
 ```
 
-Replace `q1` with `q2` … `q10` and the class name (`SchoolManagementSystem`, `TestSchoolSystem`, etc.) to run any other scenario. All runners automatically call `StudentOutput.enable()`, so outputs are already suffixed with `27150` as mandated.
+Replace `q1` with `q2` … `q10` and the class name (`SchoolManagementSystem`, `TestSchoolSystem`, etc.) to run any other scenario. All runners automatically call `StudentOutput.enable()`, so outputs are already suffixed with `27150`.
 
 ## Notes
 - If you need to temporarily disable the ID suffix (e.g., for debugging), call `StudentOutput.restore()` before the program exits, but coursework submissions should keep it enabled for every run.
-- No Python or other scripting languages remain; the solution is entirely Java/OOP as requested.
